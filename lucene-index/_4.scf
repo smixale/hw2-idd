@@ -1,0 +1,3493 @@
+cfs entry for: _4.fld
+doc 0
+  field 0
+    name title
+    type string
+    value Apple_001
+  field 1
+    name content
+    type string
+    value contenuto Apple 1\
+
+doc 1
+  field 0
+    name title
+    type string
+    value Apple_029
+  field 1
+    name content
+    type string
+    value contenuto Apple 29\
+
+doc 2
+  field 0
+    name title
+    type string
+    value Apple_036
+  field 1
+    name content
+    type string
+    value contenuto Apple 36\
+
+doc 3
+  field 0
+    name title
+    type string
+    value Apple_055
+  field 1
+    name content
+    type string
+    value contenuto Apple 55\
+
+doc 4
+  field 0
+    name title
+    type string
+    value Apple_062
+  field 1
+    name content
+    type string
+    value contenuto Apple 62\
+
+doc 5
+  field 0
+    name title
+    type string
+    value Apple_066
+  field 1
+    name content
+    type string
+    value contenuto Apple 66\
+
+doc 6
+  field 0
+    name title
+    type string
+    value Apple_073
+  field 1
+    name content
+    type string
+    value contenuto Apple 73\
+
+doc 7
+  field 0
+    name title
+    type string
+    value Apple_075
+  field 1
+    name content
+    type string
+    value contenuto Apple 75\
+
+doc 8
+  field 0
+    name title
+    type string
+    value Apple_081
+  field 1
+    name content
+    type string
+    value contenuto Apple 81\
+
+doc 9
+  field 0
+    name title
+    type string
+    value Apple_089
+  field 1
+    name content
+    type string
+    value contenuto Apple 89\
+
+doc 10
+  field 0
+    name title
+    type string
+    value Cinema_007
+  field 1
+    name content
+    type string
+    value contenuto Cinema 7\
+
+doc 11
+  field 0
+    name title
+    type string
+    value Cinema_009
+  field 1
+    name content
+    type string
+    value contenuto Cinema 9\
+
+doc 12
+  field 0
+    name title
+    type string
+    value Cinema_015
+  field 1
+    name content
+    type string
+    value contenuto Cinema 15\
+
+doc 13
+  field 0
+    name title
+    type string
+    value Cinema_016
+  field 1
+    name content
+    type string
+    value contenuto Cinema 16\
+
+doc 14
+  field 0
+    name title
+    type string
+    value Cinema_047
+  field 1
+    name content
+    type string
+    value contenuto Cinema 47\
+
+doc 15
+  field 0
+    name title
+    type string
+    value Cinema_057
+  field 1
+    name content
+    type string
+    value contenuto Cinema 57\
+
+doc 16
+  field 0
+    name title
+    type string
+    value Cinema_058
+  field 1
+    name content
+    type string
+    value contenuto Cinema 58\
+
+doc 17
+  field 0
+    name title
+    type string
+    value Cinema_064
+  field 1
+    name content
+    type string
+    value contenuto Cinema 64\
+
+doc 18
+  field 0
+    name title
+    type string
+    value Cinema_077
+  field 1
+    name content
+    type string
+    value contenuto Cinema 77\
+
+doc 19
+  field 0
+    name title
+    type string
+    value Cinema_078
+  field 1
+    name content
+    type string
+    value contenuto Cinema 78\
+
+doc 20
+  field 0
+    name title
+    type string
+    value Computer_008
+  field 1
+    name content
+    type string
+    value contenuto Computer 8\
+
+doc 21
+  field 0
+    name title
+    type string
+    value Computer_027
+  field 1
+    name content
+    type string
+    value contenuto Computer 27\
+
+doc 22
+  field 0
+    name title
+    type string
+    value Computer_037
+  field 1
+    name content
+    type string
+    value contenuto Computer 37\
+
+doc 23
+  field 0
+    name title
+    type string
+    value Computer_041
+  field 1
+    name content
+    type string
+    value contenuto Computer 41\
+
+doc 24
+  field 0
+    name title
+    type string
+    value Computer_059
+  field 1
+    name content
+    type string
+    value contenuto Computer 59\
+
+doc 25
+  field 0
+    name title
+    type string
+    value Computer_061
+  field 1
+    name content
+    type string
+    value contenuto Computer 61\
+
+doc 26
+  field 0
+    name title
+    type string
+    value Computer_072
+  field 1
+    name content
+    type string
+    value contenuto Computer 72\
+
+doc 27
+  field 0
+    name title
+    type string
+    value Computer_082
+  field 1
+    name content
+    type string
+    value contenuto Computer 82\
+
+doc 28
+  field 0
+    name title
+    type string
+    value Computer_084
+  field 1
+    name content
+    type string
+    value contenuto Computer 84\
+
+doc 29
+  field 0
+    name title
+    type string
+    value Computer_098
+  field 1
+    name content
+    type string
+    value contenuto Computer 98\
+
+doc 30
+  field 0
+    name title
+    type string
+    value Libri_004
+  field 1
+    name content
+    type string
+    value contenuto Libri 4\
+
+doc 31
+  field 0
+    name title
+    type string
+    value Libri_014
+  field 1
+    name content
+    type string
+    value contenuto Libri 14\
+
+doc 32
+  field 0
+    name title
+    type string
+    value Libri_021
+  field 1
+    name content
+    type string
+    value contenuto Libri 21\
+
+doc 33
+  field 0
+    name title
+    type string
+    value Libri_022
+  field 1
+    name content
+    type string
+    value contenuto Libri 22\
+
+doc 34
+  field 0
+    name title
+    type string
+    value Libri_035
+  field 1
+    name content
+    type string
+    value contenuto Libri 35\
+
+doc 35
+  field 0
+    name title
+    type string
+    value Libri_039
+  field 1
+    name content
+    type string
+    value contenuto Libri 39\
+
+doc 36
+  field 0
+    name title
+    type string
+    value Libri_045
+  field 1
+    name content
+    type string
+    value contenuto Libri 45\
+
+doc 37
+  field 0
+    name title
+    type string
+    value Libri_049
+  field 1
+    name content
+    type string
+    value contenuto Libri 49\
+
+doc 38
+  field 0
+    name title
+    type string
+    value Libri_067
+  field 1
+    name content
+    type string
+    value contenuto Libri 67\
+
+doc 39
+  field 0
+    name title
+    type string
+    value Libri_088
+  field 1
+    name content
+    type string
+    value contenuto Libri 88\
+
+doc 40
+  field 0
+    name title
+    type string
+    value Musica_002
+  field 1
+    name content
+    type string
+    value contenuto Musica 2\
+
+doc 41
+  field 0
+    name title
+    type string
+    value Musica_012
+  field 1
+    name content
+    type string
+    value contenuto Musica 12\
+
+doc 42
+  field 0
+    name title
+    type string
+    value Musica_025
+  field 1
+    name content
+    type string
+    value contenuto Musica 25\
+
+doc 43
+  field 0
+    name title
+    type string
+    value Musica_031
+  field 1
+    name content
+    type string
+    value contenuto Musica 31\
+
+doc 44
+  field 0
+    name title
+    type string
+    value Musica_068
+  field 1
+    name content
+    type string
+    value contenuto Musica 68\
+
+doc 45
+  field 0
+    name title
+    type string
+    value Musica_080
+  field 1
+    name content
+    type string
+    value contenuto Musica 80\
+
+doc 46
+  field 0
+    name title
+    type string
+    value Musica_085
+  field 1
+    name content
+    type string
+    value contenuto Musica 85\
+
+doc 47
+  field 0
+    name title
+    type string
+    value Musica_087
+  field 1
+    name content
+    type string
+    value contenuto Musica 87\
+
+doc 48
+  field 0
+    name title
+    type string
+    value Musica_095
+  field 1
+    name content
+    type string
+    value contenuto Musica 95\
+
+doc 49
+  field 0
+    name title
+    type string
+    value Musica_100
+  field 1
+    name content
+    type string
+    value contenuto Musica 100\
+
+doc 50
+  field 0
+    name title
+    type string
+    value Samsung_003
+  field 1
+    name content
+    type string
+    value contenuto Samsung 3\
+
+doc 51
+  field 0
+    name title
+    type string
+    value Samsung_005
+  field 1
+    name content
+    type string
+    value contenuto Samsung 5\
+
+doc 52
+  field 0
+    name title
+    type string
+    value Samsung_020
+  field 1
+    name content
+    type string
+    value contenuto Samsung 20\
+
+doc 53
+  field 0
+    name title
+    type string
+    value Samsung_046
+  field 1
+    name content
+    type string
+    value contenuto Samsung 46\
+
+doc 54
+  field 0
+    name title
+    type string
+    value Samsung_048
+  field 1
+    name content
+    type string
+    value contenuto Samsung 48\
+
+doc 55
+  field 0
+    name title
+    type string
+    value Samsung_051
+  field 1
+    name content
+    type string
+    value contenuto Samsung 51\
+
+doc 56
+  field 0
+    name title
+    type string
+    value Samsung_052
+  field 1
+    name content
+    type string
+    value contenuto Samsung 52\
+
+doc 57
+  field 0
+    name title
+    type string
+    value Samsung_060
+  field 1
+    name content
+    type string
+    value contenuto Samsung 60\
+
+doc 58
+  field 0
+    name title
+    type string
+    value Samsung_070
+  field 1
+    name content
+    type string
+    value contenuto Samsung 70\
+
+doc 59
+  field 0
+    name title
+    type string
+    value Samsung_086
+  field 1
+    name content
+    type string
+    value contenuto Samsung 86\
+
+doc 60
+  field 0
+    name title
+    type string
+    value Scuola_018
+  field 1
+    name content
+    type string
+    value contenuto Scuola 18\
+
+doc 61
+  field 0
+    name title
+    type string
+    value Scuola_030
+  field 1
+    name content
+    type string
+    value contenuto Scuola 30\
+
+doc 62
+  field 0
+    name title
+    type string
+    value Scuola_033
+  field 1
+    name content
+    type string
+    value contenuto Scuola 33\
+
+doc 63
+  field 0
+    name title
+    type string
+    value Scuola_053
+  field 1
+    name content
+    type string
+    value contenuto Scuola 53\
+
+doc 64
+  field 0
+    name title
+    type string
+    value Scuola_056
+  field 1
+    name content
+    type string
+    value contenuto Scuola 56\
+
+doc 65
+  field 0
+    name title
+    type string
+    value Scuola_069
+  field 1
+    name content
+    type string
+    value contenuto Scuola 69\
+
+doc 66
+  field 0
+    name title
+    type string
+    value Scuola_083
+  field 1
+    name content
+    type string
+    value contenuto Scuola 83\
+
+doc 67
+  field 0
+    name title
+    type string
+    value Scuola_092
+  field 1
+    name content
+    type string
+    value contenuto Scuola 92\
+
+doc 68
+  field 0
+    name title
+    type string
+    value Scuola_097
+  field 1
+    name content
+    type string
+    value contenuto Scuola 97\
+
+doc 69
+  field 0
+    name title
+    type string
+    value Scuola_099
+  field 1
+    name content
+    type string
+    value contenuto Scuola 99\
+
+doc 70
+  field 0
+    name title
+    type string
+    value Sport_006
+  field 1
+    name content
+    type string
+    value contenuto Sport 6\
+
+doc 71
+  field 0
+    name title
+    type string
+    value Sport_026
+  field 1
+    name content
+    type string
+    value contenuto Sport 26\
+
+doc 72
+  field 0
+    name title
+    type string
+    value Sport_038
+  field 1
+    name content
+    type string
+    value contenuto Sport 38\
+
+doc 73
+  field 0
+    name title
+    type string
+    value Sport_040
+  field 1
+    name content
+    type string
+    value contenuto Sport 40\
+
+doc 74
+  field 0
+    name title
+    type string
+    value Sport_042
+  field 1
+    name content
+    type string
+    value contenuto Sport 42\
+
+doc 75
+  field 0
+    name title
+    type string
+    value Sport_050
+  field 1
+    name content
+    type string
+    value contenuto Sport 50\
+
+doc 76
+  field 0
+    name title
+    type string
+    value Sport_063
+  field 1
+    name content
+    type string
+    value contenuto Sport 63\
+
+doc 77
+  field 0
+    name title
+    type string
+    value Sport_076
+  field 1
+    name content
+    type string
+    value contenuto Sport 76\
+
+doc 78
+  field 0
+    name title
+    type string
+    value Sport_094
+  field 1
+    name content
+    type string
+    value contenuto Sport 94\
+
+doc 79
+  field 0
+    name title
+    type string
+    value Sport_096
+  field 1
+    name content
+    type string
+    value contenuto Sport 96\
+
+doc 80
+  field 0
+    name title
+    type string
+    value Università_010
+  field 1
+    name content
+    type string
+    value contenuto Università 10\
+
+doc 81
+  field 0
+    name title
+    type string
+    value Università_013
+  field 1
+    name content
+    type string
+    value contenuto Università 13\
+
+doc 82
+  field 0
+    name title
+    type string
+    value Università_017
+  field 1
+    name content
+    type string
+    value contenuto Università 17\
+
+doc 83
+  field 0
+    name title
+    type string
+    value Università_019
+  field 1
+    name content
+    type string
+    value contenuto Università 19\
+
+doc 84
+  field 0
+    name title
+    type string
+    value Università_028
+  field 1
+    name content
+    type string
+    value contenuto Università 28\
+
+doc 85
+  field 0
+    name title
+    type string
+    value Università_034
+  field 1
+    name content
+    type string
+    value contenuto Università 34\
+
+doc 86
+  field 0
+    name title
+    type string
+    value Università_065
+  field 1
+    name content
+    type string
+    value contenuto Università 65\
+
+doc 87
+  field 0
+    name title
+    type string
+    value Università_071
+  field 1
+    name content
+    type string
+    value contenuto Università 71\
+
+doc 88
+  field 0
+    name title
+    type string
+    value Università_074
+  field 1
+    name content
+    type string
+    value contenuto Università 74\
+
+doc 89
+  field 0
+    name title
+    type string
+    value Università_093
+  field 1
+    name content
+    type string
+    value contenuto Università 93\
+
+doc 90
+  field 0
+    name title
+    type string
+    value Videogiochi_011
+  field 1
+    name content
+    type string
+    value contenuto Videogiochi 11\
+
+doc 91
+  field 0
+    name title
+    type string
+    value Videogiochi_023
+  field 1
+    name content
+    type string
+    value contenuto Videogiochi 23\
+
+doc 92
+  field 0
+    name title
+    type string
+    value Videogiochi_024
+  field 1
+    name content
+    type string
+    value contenuto Videogiochi 24\
+
+doc 93
+  field 0
+    name title
+    type string
+    value Videogiochi_032
+  field 1
+    name content
+    type string
+    value contenuto Videogiochi 32\
+
+doc 94
+  field 0
+    name title
+    type string
+    value Videogiochi_043
+  field 1
+    name content
+    type string
+    value contenuto Videogiochi 43\
+
+doc 95
+  field 0
+    name title
+    type string
+    value Videogiochi_044
+  field 1
+    name content
+    type string
+    value contenuto Videogiochi 44\
+
+doc 96
+  field 0
+    name title
+    type string
+    value Videogiochi_054
+  field 1
+    name content
+    type string
+    value contenuto Videogiochi 54\
+
+doc 97
+  field 0
+    name title
+    type string
+    value Videogiochi_079
+  field 1
+    name content
+    type string
+    value contenuto Videogiochi 79\
+
+doc 98
+  field 0
+    name title
+    type string
+    value Videogiochi_090
+  field 1
+    name content
+    type string
+    value contenuto Videogiochi 90\
+
+doc 99
+  field 0
+    name title
+    type string
+    value Videogiochi_091
+  field 1
+    name content
+    type string
+    value contenuto Videogiochi 91\
+
+END
+checksum 00000000002620560855
+cfs entry for: _4.inf
+number of fields 2
+  name title
+  number 0
+  index options DOCS_AND_FREQS_AND_POSITIONS
+  term vectors false
+  payloads false
+  norms true
+  doc values NONE
+  doc values gen -1
+  attributes 0
+  data dimensional count 0
+  index dimensional count 0
+  dimensional num bytes 0
+  soft-deletes false
+  name content
+  number 1
+  index options DOCS_AND_FREQS_AND_POSITIONS
+  term vectors false
+  payloads false
+  norms true
+  doc values NONE
+  doc values gen -1
+  attributes 0
+  data dimensional count 0
+  index dimensional count 0
+  dimensional num bytes 0
+  soft-deletes false
+checksum 00000000001675594787
+cfs entry for: _4.len
+field title
+  type NUMERIC
+  minvalue 2
+  pattern 0
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+field content
+  type NUMERIC
+  minvalue 3
+  pattern 0
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+0
+T
+END
+checksum 00000000003245248160
+cfs entry for: _4.pst
+field content
+  term 1
+    doc 0
+      freq 1
+      pos 2
+  term 10
+    doc 80
+      freq 1
+      pos 2
+  term 100
+    doc 49
+      freq 1
+      pos 2
+  term 11
+    doc 90
+      freq 1
+      pos 2
+  term 12
+    doc 41
+      freq 1
+      pos 2
+  term 13
+    doc 81
+      freq 1
+      pos 2
+  term 14
+    doc 31
+      freq 1
+      pos 2
+  term 15
+    doc 12
+      freq 1
+      pos 2
+  term 16
+    doc 13
+      freq 1
+      pos 2
+  term 17
+    doc 82
+      freq 1
+      pos 2
+  term 18
+    doc 60
+      freq 1
+      pos 2
+  term 19
+    doc 83
+      freq 1
+      pos 2
+  term 2
+    doc 40
+      freq 1
+      pos 2
+  term 20
+    doc 52
+      freq 1
+      pos 2
+  term 21
+    doc 32
+      freq 1
+      pos 2
+  term 22
+    doc 33
+      freq 1
+      pos 2
+  term 23
+    doc 91
+      freq 1
+      pos 2
+  term 24
+    doc 92
+      freq 1
+      pos 2
+  term 25
+    doc 42
+      freq 1
+      pos 2
+  term 26
+    doc 71
+      freq 1
+      pos 2
+  term 27
+    doc 21
+      freq 1
+      pos 2
+  term 28
+    doc 84
+      freq 1
+      pos 2
+  term 29
+    doc 1
+      freq 1
+      pos 2
+  term 3
+    doc 50
+      freq 1
+      pos 2
+  term 30
+    doc 61
+      freq 1
+      pos 2
+  term 31
+    doc 43
+      freq 1
+      pos 2
+  term 32
+    doc 93
+      freq 1
+      pos 2
+  term 33
+    doc 62
+      freq 1
+      pos 2
+  term 34
+    doc 85
+      freq 1
+      pos 2
+  term 35
+    doc 34
+      freq 1
+      pos 2
+  term 36
+    doc 2
+      freq 1
+      pos 2
+  term 37
+    doc 22
+      freq 1
+      pos 2
+  term 38
+    doc 72
+      freq 1
+      pos 2
+  term 39
+    doc 35
+      freq 1
+      pos 2
+  term 4
+    doc 30
+      freq 1
+      pos 2
+  term 40
+    doc 73
+      freq 1
+      pos 2
+  term 41
+    doc 23
+      freq 1
+      pos 2
+  term 42
+    doc 74
+      freq 1
+      pos 2
+  term 43
+    doc 94
+      freq 1
+      pos 2
+  term 44
+    doc 95
+      freq 1
+      pos 2
+  term 45
+    doc 36
+      freq 1
+      pos 2
+  term 46
+    doc 53
+      freq 1
+      pos 2
+  term 47
+    doc 14
+      freq 1
+      pos 2
+  term 48
+    doc 54
+      freq 1
+      pos 2
+  term 49
+    doc 37
+      freq 1
+      pos 2
+  term 5
+    doc 51
+      freq 1
+      pos 2
+  term 50
+    doc 75
+      freq 1
+      pos 2
+  term 51
+    doc 55
+      freq 1
+      pos 2
+  term 52
+    doc 56
+      freq 1
+      pos 2
+  term 53
+    doc 63
+      freq 1
+      pos 2
+  term 54
+    doc 96
+      freq 1
+      pos 2
+  term 55
+    doc 3
+      freq 1
+      pos 2
+  term 56
+    doc 64
+      freq 1
+      pos 2
+  term 57
+    doc 15
+      freq 1
+      pos 2
+  term 58
+    doc 16
+      freq 1
+      pos 2
+  term 59
+    doc 24
+      freq 1
+      pos 2
+  term 6
+    doc 70
+      freq 1
+      pos 2
+  term 60
+    doc 57
+      freq 1
+      pos 2
+  term 61
+    doc 25
+      freq 1
+      pos 2
+  term 62
+    doc 4
+      freq 1
+      pos 2
+  term 63
+    doc 76
+      freq 1
+      pos 2
+  term 64
+    doc 17
+      freq 1
+      pos 2
+  term 65
+    doc 86
+      freq 1
+      pos 2
+  term 66
+    doc 5
+      freq 1
+      pos 2
+  term 67
+    doc 38
+      freq 1
+      pos 2
+  term 68
+    doc 44
+      freq 1
+      pos 2
+  term 69
+    doc 65
+      freq 1
+      pos 2
+  term 7
+    doc 10
+      freq 1
+      pos 2
+  term 70
+    doc 58
+      freq 1
+      pos 2
+  term 71
+    doc 87
+      freq 1
+      pos 2
+  term 72
+    doc 26
+      freq 1
+      pos 2
+  term 73
+    doc 6
+      freq 1
+      pos 2
+  term 74
+    doc 88
+      freq 1
+      pos 2
+  term 75
+    doc 7
+      freq 1
+      pos 2
+  term 76
+    doc 77
+      freq 1
+      pos 2
+  term 77
+    doc 18
+      freq 1
+      pos 2
+  term 78
+    doc 19
+      freq 1
+      pos 2
+  term 79
+    doc 97
+      freq 1
+      pos 2
+  term 8
+    doc 20
+      freq 1
+      pos 2
+  term 80
+    doc 45
+      freq 1
+      pos 2
+  term 81
+    doc 8
+      freq 1
+      pos 2
+  term 82
+    doc 27
+      freq 1
+      pos 2
+  term 83
+    doc 66
+      freq 1
+      pos 2
+  term 84
+    doc 28
+      freq 1
+      pos 2
+  term 85
+    doc 46
+      freq 1
+      pos 2
+  term 86
+    doc 59
+      freq 1
+      pos 2
+  term 87
+    doc 47
+      freq 1
+      pos 2
+  term 88
+    doc 39
+      freq 1
+      pos 2
+  term 89
+    doc 9
+      freq 1
+      pos 2
+  term 9
+    doc 11
+      freq 1
+      pos 2
+  term 90
+    doc 98
+      freq 1
+      pos 2
+  term 91
+    doc 99
+      freq 1
+      pos 2
+  term 92
+    doc 67
+      freq 1
+      pos 2
+  term 93
+    doc 89
+      freq 1
+      pos 2
+  term 94
+    doc 78
+      freq 1
+      pos 2
+  term 95
+    doc 48
+      freq 1
+      pos 2
+  term 96
+    doc 79
+      freq 1
+      pos 2
+  term 97
+    doc 68
+      freq 1
+      pos 2
+  term 98
+    doc 29
+      freq 1
+      pos 2
+  term 99
+    doc 69
+      freq 1
+      pos 2
+  term apple
+    doc 0
+      freq 1
+      pos 1
+    doc 1
+      freq 1
+      pos 1
+    doc 2
+      freq 1
+      pos 1
+    doc 3
+      freq 1
+      pos 1
+    doc 4
+      freq 1
+      pos 1
+    doc 5
+      freq 1
+      pos 1
+    doc 6
+      freq 1
+      pos 1
+    doc 7
+      freq 1
+      pos 1
+    doc 8
+      freq 1
+      pos 1
+    doc 9
+      freq 1
+      pos 1
+    skipList 
+      level 0
+        skipDoc 7
+        skipDocFP 4609
+        impacts 
+          impact 
+            freq 1
+            norm 3
+        impactsEnd 
+  term cinema
+    doc 10
+      freq 1
+      pos 1
+    doc 11
+      freq 1
+      pos 1
+    doc 12
+      freq 1
+      pos 1
+    doc 13
+      freq 1
+      pos 1
+    doc 14
+      freq 1
+      pos 1
+    doc 15
+      freq 1
+      pos 1
+    doc 16
+      freq 1
+      pos 1
+    doc 17
+      freq 1
+      pos 1
+    doc 18
+      freq 1
+      pos 1
+    doc 19
+      freq 1
+      pos 1
+    skipList 
+      level 0
+        skipDoc 17
+        skipDocFP 5135
+        impacts 
+          impact 
+            freq 1
+            norm 3
+        impactsEnd 
+  term computer
+    doc 20
+      freq 1
+      pos 1
+    doc 21
+      freq 1
+      pos 1
+    doc 22
+      freq 1
+      pos 1
+    doc 23
+      freq 1
+      pos 1
+    doc 24
+      freq 1
+      pos 1
+    doc 25
+      freq 1
+      pos 1
+    doc 26
+      freq 1
+      pos 1
+    doc 27
+      freq 1
+      pos 1
+    doc 28
+      freq 1
+      pos 1
+    doc 29
+      freq 1
+      pos 1
+    skipList 
+      level 0
+        skipDoc 27
+        skipDocFP 5674
+        impacts 
+          impact 
+            freq 1
+            norm 3
+        impactsEnd 
+  term contenuto
+    doc 0
+      freq 1
+      pos 0
+    doc 1
+      freq 1
+      pos 0
+    doc 2
+      freq 1
+      pos 0
+    doc 3
+      freq 1
+      pos 0
+    doc 4
+      freq 1
+      pos 0
+    doc 5
+      freq 1
+      pos 0
+    doc 6
+      freq 1
+      pos 0
+    doc 7
+      freq 1
+      pos 0
+    doc 8
+      freq 1
+      pos 0
+    doc 9
+      freq 1
+      pos 0
+    doc 10
+      freq 1
+      pos 0
+    doc 11
+      freq 1
+      pos 0
+    doc 12
+      freq 1
+      pos 0
+    doc 13
+      freq 1
+      pos 0
+    doc 14
+      freq 1
+      pos 0
+    doc 15
+      freq 1
+      pos 0
+    doc 16
+      freq 1
+      pos 0
+    doc 17
+      freq 1
+      pos 0
+    doc 18
+      freq 1
+      pos 0
+    doc 19
+      freq 1
+      pos 0
+    doc 20
+      freq 1
+      pos 0
+    doc 21
+      freq 1
+      pos 0
+    doc 22
+      freq 1
+      pos 0
+    doc 23
+      freq 1
+      pos 0
+    doc 24
+      freq 1
+      pos 0
+    doc 25
+      freq 1
+      pos 0
+    doc 26
+      freq 1
+      pos 0
+    doc 27
+      freq 1
+      pos 0
+    doc 28
+      freq 1
+      pos 0
+    doc 29
+      freq 1
+      pos 0
+    doc 30
+      freq 1
+      pos 0
+    doc 31
+      freq 1
+      pos 0
+    doc 32
+      freq 1
+      pos 0
+    doc 33
+      freq 1
+      pos 0
+    doc 34
+      freq 1
+      pos 0
+    doc 35
+      freq 1
+      pos 0
+    doc 36
+      freq 1
+      pos 0
+    doc 37
+      freq 1
+      pos 0
+    doc 38
+      freq 1
+      pos 0
+    doc 39
+      freq 1
+      pos 0
+    doc 40
+      freq 1
+      pos 0
+    doc 41
+      freq 1
+      pos 0
+    doc 42
+      freq 1
+      pos 0
+    doc 43
+      freq 1
+      pos 0
+    doc 44
+      freq 1
+      pos 0
+    doc 45
+      freq 1
+      pos 0
+    doc 46
+      freq 1
+      pos 0
+    doc 47
+      freq 1
+      pos 0
+    doc 48
+      freq 1
+      pos 0
+    doc 49
+      freq 1
+      pos 0
+    doc 50
+      freq 1
+      pos 0
+    doc 51
+      freq 1
+      pos 0
+    doc 52
+      freq 1
+      pos 0
+    doc 53
+      freq 1
+      pos 0
+    doc 54
+      freq 1
+      pos 0
+    doc 55
+      freq 1
+      pos 0
+    doc 56
+      freq 1
+      pos 0
+    doc 57
+      freq 1
+      pos 0
+    doc 58
+      freq 1
+      pos 0
+    doc 59
+      freq 1
+      pos 0
+    doc 60
+      freq 1
+      pos 0
+    doc 61
+      freq 1
+      pos 0
+    doc 62
+      freq 1
+      pos 0
+    doc 63
+      freq 1
+      pos 0
+    doc 64
+      freq 1
+      pos 0
+    doc 65
+      freq 1
+      pos 0
+    doc 66
+      freq 1
+      pos 0
+    doc 67
+      freq 1
+      pos 0
+    doc 68
+      freq 1
+      pos 0
+    doc 69
+      freq 1
+      pos 0
+    doc 70
+      freq 1
+      pos 0
+    doc 71
+      freq 1
+      pos 0
+    doc 72
+      freq 1
+      pos 0
+    doc 73
+      freq 1
+      pos 0
+    doc 74
+      freq 1
+      pos 0
+    doc 75
+      freq 1
+      pos 0
+    doc 76
+      freq 1
+      pos 0
+    doc 77
+      freq 1
+      pos 0
+    doc 78
+      freq 1
+      pos 0
+    doc 79
+      freq 1
+      pos 0
+    doc 80
+      freq 1
+      pos 0
+    doc 81
+      freq 1
+      pos 0
+    doc 82
+      freq 1
+      pos 0
+    doc 83
+      freq 1
+      pos 0
+    doc 84
+      freq 1
+      pos 0
+    doc 85
+      freq 1
+      pos 0
+    doc 86
+      freq 1
+      pos 0
+    doc 87
+      freq 1
+      pos 0
+    doc 88
+      freq 1
+      pos 0
+    doc 89
+      freq 1
+      pos 0
+    doc 90
+      freq 1
+      pos 0
+    doc 91
+      freq 1
+      pos 0
+    doc 92
+      freq 1
+      pos 0
+    doc 93
+      freq 1
+      pos 0
+    doc 94
+      freq 1
+      pos 0
+    doc 95
+      freq 1
+      pos 0
+    doc 96
+      freq 1
+      pos 0
+    doc 97
+      freq 1
+      pos 0
+    doc 98
+      freq 1
+      pos 0
+    doc 99
+      freq 1
+      pos 0
+    skipList 
+      levelLength 174
+      level 2
+        skipDoc 71
+        skipDocFP 8508
+        impacts 
+          impact 
+            freq 1
+            norm 3
+        impactsEnd 
+        childPointer 469
+      levelLength 656
+      level 1
+        skipDoc 23
+        skipDocFP 6780
+        impacts 
+          impact 
+            freq 1
+            norm 3
+        impactsEnd 
+        childPointer 418
+        skipDoc 47
+        skipDocFP 7644
+        impacts 
+          impact 
+            freq 1
+            norm 3
+        impactsEnd 
+        childPointer 823
+        skipDoc 71
+        skipDocFP 8508
+        impacts 
+          impact 
+            freq 1
+            norm 3
+        impactsEnd 
+        childPointer 1228
+        skipDoc 95
+        skipDocFP 9372
+        impacts 
+          impact 
+            freq 1
+            norm 3
+        impactsEnd 
+        childPointer 1633
+      level 0
+        skipDoc 7
+        skipDocFP 6214
+        impacts 
+          impact 
+            freq 1
+            norm 3
+        impactsEnd 
+        skipDoc 15
+        skipDocFP 6494
+        impacts 
+          impact 
+            freq 1
+            norm 3
+        impactsEnd 
+        skipDoc 23
+        skipDocFP 6780
+        impacts 
+          impact 
+            freq 1
+            norm 3
+        impactsEnd 
+        skipDoc 31
+        skipDocFP 7068
+        impacts 
+          impact 
+            freq 1
+            norm 3
+        impactsEnd 
+        skipDoc 39
+        skipDocFP 7356
+        impacts 
+          impact 
+            freq 1
+            norm 3
+        impactsEnd 
+        skipDoc 47
+        skipDocFP 7644
+        impacts 
+          impact 
+            freq 1
+            norm 3
+        impactsEnd 
+        skipDoc 55
+        skipDocFP 7932
+        impacts 
+          impact 
+            freq 1
+            norm 3
+        impactsEnd 
+        skipDoc 63
+        skipDocFP 8220
+        impacts 
+          impact 
+            freq 1
+            norm 3
+        impactsEnd 
+        skipDoc 71
+        skipDocFP 8508
+        impacts 
+          impact 
+            freq 1
+            norm 3
+        impactsEnd 
+        skipDoc 79
+        skipDocFP 8796
+        impacts 
+          impact 
+            freq 1
+            norm 3
+        impactsEnd 
+        skipDoc 87
+        skipDocFP 9084
+        impacts 
+          impact 
+            freq 1
+            norm 3
+        impactsEnd 
+        skipDoc 95
+        skipDocFP 9372
+        impacts 
+          impact 
+            freq 1
+            norm 3
+        impactsEnd 
+  term libri
+    doc 30
+      freq 1
+      pos 1
+    doc 31
+      freq 1
+      pos 1
+    doc 32
+      freq 1
+      pos 1
+    doc 33
+      freq 1
+      pos 1
+    doc 34
+      freq 1
+      pos 1
+    doc 35
+      freq 1
+      pos 1
+    doc 36
+      freq 1
+      pos 1
+    doc 37
+      freq 1
+      pos 1
+    doc 38
+      freq 1
+      pos 1
+    doc 39
+      freq 1
+      pos 1
+    skipList 
+      level 0
+        skipDoc 37
+        skipDocFP 12338
+        impacts 
+          impact 
+            freq 1
+            norm 3
+        impactsEnd 
+  term musica
+    doc 40
+      freq 1
+      pos 1
+    doc 41
+      freq 1
+      pos 1
+    doc 42
+      freq 1
+      pos 1
+    doc 43
+      freq 1
+      pos 1
+    doc 44
+      freq 1
+      pos 1
+    doc 45
+      freq 1
+      pos 1
+    doc 46
+      freq 1
+      pos 1
+    doc 47
+      freq 1
+      pos 1
+    doc 48
+      freq 1
+      pos 1
+    doc 49
+      freq 1
+      pos 1
+    skipList 
+      level 0
+        skipDoc 47
+        skipDocFP 12876
+        impacts 
+          impact 
+            freq 1
+            norm 3
+        impactsEnd 
+  term samsung
+    doc 50
+      freq 1
+      pos 1
+    doc 51
+      freq 1
+      pos 1
+    doc 52
+      freq 1
+      pos 1
+    doc 53
+      freq 1
+      pos 1
+    doc 54
+      freq 1
+      pos 1
+    doc 55
+      freq 1
+      pos 1
+    doc 56
+      freq 1
+      pos 1
+    doc 57
+      freq 1
+      pos 1
+    doc 58
+      freq 1
+      pos 1
+    doc 59
+      freq 1
+      pos 1
+    skipList 
+      level 0
+        skipDoc 57
+        skipDocFP 13415
+        impacts 
+          impact 
+            freq 1
+            norm 3
+        impactsEnd 
+  term scuola
+    doc 60
+      freq 1
+      pos 1
+    doc 61
+      freq 1
+      pos 1
+    doc 62
+      freq 1
+      pos 1
+    doc 63
+      freq 1
+      pos 1
+    doc 64
+      freq 1
+      pos 1
+    doc 65
+      freq 1
+      pos 1
+    doc 66
+      freq 1
+      pos 1
+    doc 67
+      freq 1
+      pos 1
+    doc 68
+      freq 1
+      pos 1
+    doc 69
+      freq 1
+      pos 1
+    skipList 
+      level 0
+        skipDoc 67
+        skipDocFP 13953
+        impacts 
+          impact 
+            freq 1
+            norm 3
+        impactsEnd 
+  term sport
+    doc 70
+      freq 1
+      pos 1
+    doc 71
+      freq 1
+      pos 1
+    doc 72
+      freq 1
+      pos 1
+    doc 73
+      freq 1
+      pos 1
+    doc 74
+      freq 1
+      pos 1
+    doc 75
+      freq 1
+      pos 1
+    doc 76
+      freq 1
+      pos 1
+    doc 77
+      freq 1
+      pos 1
+    doc 78
+      freq 1
+      pos 1
+    doc 79
+      freq 1
+      pos 1
+    skipList 
+      level 0
+        skipDoc 77
+        skipDocFP 14490
+        impacts 
+          impact 
+            freq 1
+            norm 3
+        impactsEnd 
+  term università
+    doc 80
+      freq 1
+      pos 1
+    doc 81
+      freq 1
+      pos 1
+    doc 82
+      freq 1
+      pos 1
+    doc 83
+      freq 1
+      pos 1
+    doc 84
+      freq 1
+      pos 1
+    doc 85
+      freq 1
+      pos 1
+    doc 86
+      freq 1
+      pos 1
+    doc 87
+      freq 1
+      pos 1
+    doc 88
+      freq 1
+      pos 1
+    doc 89
+      freq 1
+      pos 1
+    skipList 
+      level 0
+        skipDoc 87
+        skipDocFP 15033
+        impacts 
+          impact 
+            freq 1
+            norm 3
+        impactsEnd 
+  term videogiochi
+    doc 90
+      freq 1
+      pos 1
+    doc 91
+      freq 1
+      pos 1
+    doc 92
+      freq 1
+      pos 1
+    doc 93
+      freq 1
+      pos 1
+    doc 94
+      freq 1
+      pos 1
+    doc 95
+      freq 1
+      pos 1
+    doc 96
+      freq 1
+      pos 1
+    doc 97
+      freq 1
+      pos 1
+    doc 98
+      freq 1
+      pos 1
+    doc 99
+      freq 1
+      pos 1
+    skipList 
+      level 0
+        skipDoc 97
+        skipDocFP 15576
+        impacts 
+          impact 
+            freq 1
+            norm 3
+        impactsEnd 
+field title
+  term 001
+    doc 0
+      freq 1
+      pos 1
+  term 002
+    doc 40
+      freq 1
+      pos 1
+  term 003
+    doc 50
+      freq 1
+      pos 1
+  term 004
+    doc 30
+      freq 1
+      pos 1
+  term 005
+    doc 51
+      freq 1
+      pos 1
+  term 006
+    doc 70
+      freq 1
+      pos 1
+  term 007
+    doc 10
+      freq 1
+      pos 1
+  term 008
+    doc 20
+      freq 1
+      pos 1
+  term 009
+    doc 11
+      freq 1
+      pos 1
+  term 010
+    doc 80
+      freq 1
+      pos 1
+  term 011
+    doc 90
+      freq 1
+      pos 1
+  term 012
+    doc 41
+      freq 1
+      pos 1
+  term 013
+    doc 81
+      freq 1
+      pos 1
+  term 014
+    doc 31
+      freq 1
+      pos 1
+  term 015
+    doc 12
+      freq 1
+      pos 1
+  term 016
+    doc 13
+      freq 1
+      pos 1
+  term 017
+    doc 82
+      freq 1
+      pos 1
+  term 018
+    doc 60
+      freq 1
+      pos 1
+  term 019
+    doc 83
+      freq 1
+      pos 1
+  term 020
+    doc 52
+      freq 1
+      pos 1
+  term 021
+    doc 32
+      freq 1
+      pos 1
+  term 022
+    doc 33
+      freq 1
+      pos 1
+  term 023
+    doc 91
+      freq 1
+      pos 1
+  term 024
+    doc 92
+      freq 1
+      pos 1
+  term 025
+    doc 42
+      freq 1
+      pos 1
+  term 026
+    doc 71
+      freq 1
+      pos 1
+  term 027
+    doc 21
+      freq 1
+      pos 1
+  term 028
+    doc 84
+      freq 1
+      pos 1
+  term 029
+    doc 1
+      freq 1
+      pos 1
+  term 030
+    doc 61
+      freq 1
+      pos 1
+  term 031
+    doc 43
+      freq 1
+      pos 1
+  term 032
+    doc 93
+      freq 1
+      pos 1
+  term 033
+    doc 62
+      freq 1
+      pos 1
+  term 034
+    doc 85
+      freq 1
+      pos 1
+  term 035
+    doc 34
+      freq 1
+      pos 1
+  term 036
+    doc 2
+      freq 1
+      pos 1
+  term 037
+    doc 22
+      freq 1
+      pos 1
+  term 038
+    doc 72
+      freq 1
+      pos 1
+  term 039
+    doc 35
+      freq 1
+      pos 1
+  term 040
+    doc 73
+      freq 1
+      pos 1
+  term 041
+    doc 23
+      freq 1
+      pos 1
+  term 042
+    doc 74
+      freq 1
+      pos 1
+  term 043
+    doc 94
+      freq 1
+      pos 1
+  term 044
+    doc 95
+      freq 1
+      pos 1
+  term 045
+    doc 36
+      freq 1
+      pos 1
+  term 046
+    doc 53
+      freq 1
+      pos 1
+  term 047
+    doc 14
+      freq 1
+      pos 1
+  term 048
+    doc 54
+      freq 1
+      pos 1
+  term 049
+    doc 37
+      freq 1
+      pos 1
+  term 050
+    doc 75
+      freq 1
+      pos 1
+  term 051
+    doc 55
+      freq 1
+      pos 1
+  term 052
+    doc 56
+      freq 1
+      pos 1
+  term 053
+    doc 63
+      freq 1
+      pos 1
+  term 054
+    doc 96
+      freq 1
+      pos 1
+  term 055
+    doc 3
+      freq 1
+      pos 1
+  term 056
+    doc 64
+      freq 1
+      pos 1
+  term 057
+    doc 15
+      freq 1
+      pos 1
+  term 058
+    doc 16
+      freq 1
+      pos 1
+  term 059
+    doc 24
+      freq 1
+      pos 1
+  term 060
+    doc 57
+      freq 1
+      pos 1
+  term 061
+    doc 25
+      freq 1
+      pos 1
+  term 062
+    doc 4
+      freq 1
+      pos 1
+  term 063
+    doc 76
+      freq 1
+      pos 1
+  term 064
+    doc 17
+      freq 1
+      pos 1
+  term 065
+    doc 86
+      freq 1
+      pos 1
+  term 066
+    doc 5
+      freq 1
+      pos 1
+  term 067
+    doc 38
+      freq 1
+      pos 1
+  term 068
+    doc 44
+      freq 1
+      pos 1
+  term 069
+    doc 65
+      freq 1
+      pos 1
+  term 070
+    doc 58
+      freq 1
+      pos 1
+  term 071
+    doc 87
+      freq 1
+      pos 1
+  term 072
+    doc 26
+      freq 1
+      pos 1
+  term 073
+    doc 6
+      freq 1
+      pos 1
+  term 074
+    doc 88
+      freq 1
+      pos 1
+  term 075
+    doc 7
+      freq 1
+      pos 1
+  term 076
+    doc 77
+      freq 1
+      pos 1
+  term 077
+    doc 18
+      freq 1
+      pos 1
+  term 078
+    doc 19
+      freq 1
+      pos 1
+  term 079
+    doc 97
+      freq 1
+      pos 1
+  term 080
+    doc 45
+      freq 1
+      pos 1
+  term 081
+    doc 8
+      freq 1
+      pos 1
+  term 082
+    doc 27
+      freq 1
+      pos 1
+  term 083
+    doc 66
+      freq 1
+      pos 1
+  term 084
+    doc 28
+      freq 1
+      pos 1
+  term 085
+    doc 46
+      freq 1
+      pos 1
+  term 086
+    doc 59
+      freq 1
+      pos 1
+  term 087
+    doc 47
+      freq 1
+      pos 1
+  term 088
+    doc 39
+      freq 1
+      pos 1
+  term 089
+    doc 9
+      freq 1
+      pos 1
+  term 090
+    doc 98
+      freq 1
+      pos 1
+  term 091
+    doc 99
+      freq 1
+      pos 1
+  term 092
+    doc 67
+      freq 1
+      pos 1
+  term 093
+    doc 89
+      freq 1
+      pos 1
+  term 094
+    doc 78
+      freq 1
+      pos 1
+  term 095
+    doc 48
+      freq 1
+      pos 1
+  term 096
+    doc 79
+      freq 1
+      pos 1
+  term 097
+    doc 68
+      freq 1
+      pos 1
+  term 098
+    doc 29
+      freq 1
+      pos 1
+  term 099
+    doc 69
+      freq 1
+      pos 1
+  term 100
+    doc 49
+      freq 1
+      pos 1
+  term apple
+    doc 0
+      freq 1
+      pos 0
+    doc 1
+      freq 1
+      pos 0
+    doc 2
+      freq 1
+      pos 0
+    doc 3
+      freq 1
+      pos 0
+    doc 4
+      freq 1
+      pos 0
+    doc 5
+      freq 1
+      pos 0
+    doc 6
+      freq 1
+      pos 0
+    doc 7
+      freq 1
+      pos 0
+    doc 8
+      freq 1
+      pos 0
+    doc 9
+      freq 1
+      pos 0
+    skipList 
+      level 0
+        skipDoc 7
+        skipDocFP 20815
+        impacts 
+          impact 
+            freq 1
+            norm 2
+        impactsEnd 
+  term cinema
+    doc 10
+      freq 1
+      pos 0
+    doc 11
+      freq 1
+      pos 0
+    doc 12
+      freq 1
+      pos 0
+    doc 13
+      freq 1
+      pos 0
+    doc 14
+      freq 1
+      pos 0
+    doc 15
+      freq 1
+      pos 0
+    doc 16
+      freq 1
+      pos 0
+    doc 17
+      freq 1
+      pos 0
+    doc 18
+      freq 1
+      pos 0
+    doc 19
+      freq 1
+      pos 0
+    skipList 
+      level 0
+        skipDoc 17
+        skipDocFP 21342
+        impacts 
+          impact 
+            freq 1
+            norm 2
+        impactsEnd 
+  term computer
+    doc 20
+      freq 1
+      pos 0
+    doc 21
+      freq 1
+      pos 0
+    doc 22
+      freq 1
+      pos 0
+    doc 23
+      freq 1
+      pos 0
+    doc 24
+      freq 1
+      pos 0
+    doc 25
+      freq 1
+      pos 0
+    doc 26
+      freq 1
+      pos 0
+    doc 27
+      freq 1
+      pos 0
+    doc 28
+      freq 1
+      pos 0
+    doc 29
+      freq 1
+      pos 0
+    skipList 
+      level 0
+        skipDoc 27
+        skipDocFP 21882
+        impacts 
+          impact 
+            freq 1
+            norm 2
+        impactsEnd 
+  term libri
+    doc 30
+      freq 1
+      pos 0
+    doc 31
+      freq 1
+      pos 0
+    doc 32
+      freq 1
+      pos 0
+    doc 33
+      freq 1
+      pos 0
+    doc 34
+      freq 1
+      pos 0
+    doc 35
+      freq 1
+      pos 0
+    doc 36
+      freq 1
+      pos 0
+    doc 37
+      freq 1
+      pos 0
+    doc 38
+      freq 1
+      pos 0
+    doc 39
+      freq 1
+      pos 0
+    skipList 
+      level 0
+        skipDoc 37
+        skipDocFP 22419
+        impacts 
+          impact 
+            freq 1
+            norm 2
+        impactsEnd 
+  term musica
+    doc 40
+      freq 1
+      pos 0
+    doc 41
+      freq 1
+      pos 0
+    doc 42
+      freq 1
+      pos 0
+    doc 43
+      freq 1
+      pos 0
+    doc 44
+      freq 1
+      pos 0
+    doc 45
+      freq 1
+      pos 0
+    doc 46
+      freq 1
+      pos 0
+    doc 47
+      freq 1
+      pos 0
+    doc 48
+      freq 1
+      pos 0
+    doc 49
+      freq 1
+      pos 0
+    skipList 
+      level 0
+        skipDoc 47
+        skipDocFP 22957
+        impacts 
+          impact 
+            freq 1
+            norm 2
+        impactsEnd 
+  term samsung
+    doc 50
+      freq 1
+      pos 0
+    doc 51
+      freq 1
+      pos 0
+    doc 52
+      freq 1
+      pos 0
+    doc 53
+      freq 1
+      pos 0
+    doc 54
+      freq 1
+      pos 0
+    doc 55
+      freq 1
+      pos 0
+    doc 56
+      freq 1
+      pos 0
+    doc 57
+      freq 1
+      pos 0
+    doc 58
+      freq 1
+      pos 0
+    doc 59
+      freq 1
+      pos 0
+    skipList 
+      level 0
+        skipDoc 57
+        skipDocFP 23496
+        impacts 
+          impact 
+            freq 1
+            norm 2
+        impactsEnd 
+  term scuola
+    doc 60
+      freq 1
+      pos 0
+    doc 61
+      freq 1
+      pos 0
+    doc 62
+      freq 1
+      pos 0
+    doc 63
+      freq 1
+      pos 0
+    doc 64
+      freq 1
+      pos 0
+    doc 65
+      freq 1
+      pos 0
+    doc 66
+      freq 1
+      pos 0
+    doc 67
+      freq 1
+      pos 0
+    doc 68
+      freq 1
+      pos 0
+    doc 69
+      freq 1
+      pos 0
+    skipList 
+      level 0
+        skipDoc 67
+        skipDocFP 24034
+        impacts 
+          impact 
+            freq 1
+            norm 2
+        impactsEnd 
+  term sport
+    doc 70
+      freq 1
+      pos 0
+    doc 71
+      freq 1
+      pos 0
+    doc 72
+      freq 1
+      pos 0
+    doc 73
+      freq 1
+      pos 0
+    doc 74
+      freq 1
+      pos 0
+    doc 75
+      freq 1
+      pos 0
+    doc 76
+      freq 1
+      pos 0
+    doc 77
+      freq 1
+      pos 0
+    doc 78
+      freq 1
+      pos 0
+    doc 79
+      freq 1
+      pos 0
+    skipList 
+      level 0
+        skipDoc 77
+        skipDocFP 24571
+        impacts 
+          impact 
+            freq 1
+            norm 2
+        impactsEnd 
+  term università
+    doc 80
+      freq 1
+      pos 0
+    doc 81
+      freq 1
+      pos 0
+    doc 82
+      freq 1
+      pos 0
+    doc 83
+      freq 1
+      pos 0
+    doc 84
+      freq 1
+      pos 0
+    doc 85
+      freq 1
+      pos 0
+    doc 86
+      freq 1
+      pos 0
+    doc 87
+      freq 1
+      pos 0
+    doc 88
+      freq 1
+      pos 0
+    doc 89
+      freq 1
+      pos 0
+    skipList 
+      level 0
+        skipDoc 87
+        skipDocFP 25114
+        impacts 
+          impact 
+            freq 1
+            norm 2
+        impactsEnd 
+  term videogiochi
+    doc 90
+      freq 1
+      pos 0
+    doc 91
+      freq 1
+      pos 0
+    doc 92
+      freq 1
+      pos 0
+    doc 93
+      freq 1
+      pos 0
+    doc 94
+      freq 1
+      pos 0
+    doc 95
+      freq 1
+      pos 0
+    doc 96
+      freq 1
+      pos 0
+    doc 97
+      freq 1
+      pos 0
+    doc 98
+      freq 1
+      pos 0
+    doc 99
+      freq 1
+      pos 0
+    skipList 
+      level 0
+        skipDoc 97
+        skipDocFP 25657
+        impacts 
+          impact 
+            freq 1
+            norm 2
+        impactsEnd 
+END
+checksum 00000000001267103673
+table of contents, size: 4
+  filename: _4.fld
+    start: 22
+    end: 14738
+  filename: _4.inf
+    start: 14760
+    end: 15361
+  filename: _4.len
+    start: 15383
+    end: 16323
+  filename: _4.pst
+    start: 16345
+    end: 42560
+table of contents begins at offset: 0000000000000042560
