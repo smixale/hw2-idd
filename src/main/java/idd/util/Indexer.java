@@ -47,12 +47,14 @@ public class Indexer {
 
             // Configurazione dell’IndexWriter
             IndexWriterConfig config = new IndexWriterConfig(perFieldAnalyzer);
-            config.setCodec(new SimpleTextCodec()); // formato leggibile a testo (per debugging)
+            config.setOpenMode(IndexWriterConfig.OpenMode.CREATE);                                          // ad ogni esecuzione ricreo da zero l'indice per mantenre i risultati aggiornati rispetto ai file forniti
+            config.setCodec(new SimpleTextCodec());                                                         // formato leggibile a testo (per debugging)
+
 
             IndexWriter writer = new IndexWriter(directory, config);
 
             // Recupera i documenti (parsing dei file TXT)
-            List<Document> docs = Docs.analizzaFile("D:\\workspace\\ingegneria_dei_dati\\motore_di_ricerca_lucene\\motore\\targetFiles");
+            List<Document> docs = Docs.analizzaFile("D:\\workspace\\ingegneria_dei_dati\\motore_di_ricerca_lucene\\motore\\hw2-idd\\targetFiles");
 
             System.out.println("Indicizzazione dei file trovati...");
 

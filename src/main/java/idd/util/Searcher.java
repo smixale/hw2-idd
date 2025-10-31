@@ -97,41 +97,45 @@ public class Searcher {
 
                 String content = doc.get("content");
                 if (content != null) {
-                    // Mostra solo un estratto
-                    System.out.println("Contenuto: " + content.substring(0, Math.min(300, content.length())) + "...");
+                    /*mostra solo un estratto*/
+                    System.out.println("Contenuto: " + content.substring(0, Math.min(300, content.length())) + "....");
+                    /*considero rilevanti tutti e soli i file che hanno nel proprio contenuto 3 o più occorrenze della query cercata*/
+                    if (this.contaOccorrenze(content, q) >= 3) {
+                        relevantDocumentsFound++;
+                    }
                 }
 
-                System.out.println("Score: " + hit.score);
+                System.out.println("\nScore: " + hit.score);
                 System.out.println("====================================================");
-
-                //se i documenti avessero un campo 'relevant' si potrebbe calcolare precision e recall
-                String relevantValue = doc.get("relevant");
-                boolean isRelevant = relevantValue != null && Boolean.parseBoolean(relevantValue);
-                if (isRelevant) {
-                    relevantDocumentsFound++;
-                }
             }
 
             //calcolo precision/recall
-//            double precision = (hits.length == 0) ? 0 : (double) relevantDocumentsFound / hits.length;
-//            double recall = (totalDocs == 0) ? 0 : (double) relevantDocumentsFound / totalDocs;
+            double precision = (hits.length == 0) ? 0 : (double) relevantDocumentsFound / hits.length;
 
-            double precision = (double) relevantDocumentsFound/((double) hits.length + (double) relevantDocumentsFound);
-            double recall = (double) relevantDocumentsFound/ (double) hits.length;
 
             System.out.println("\nStatistiche:");
 
-            System.out.println("relevantDocumentsFound: " + relevantDocumentsFound);
-            System.out.println("hits.length: " + hits.length);
-
+            System.out.println("documenti rilevanti trovati: " + relevantDocumentsFound);
             System.out.println("Precision: " + precision);
-            System.out.println("Recall: " + recall);
+            System.out.println("Recall: (non calcolabile senza conoscere a priori il numero di documenti rilevanti esistenti nella pool)");
 
             reader.close();
 
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    private static int contaOccorrenze(String content, String s) {
+        int occorrenze = 0;
+        int i = 0;
+
+        while ((i = content.indexOf(s, i)) != -1) {
+            occorrenze++;
+            i += s.length();
+        }
+
+        return occorrenze;
     }
 }
 
