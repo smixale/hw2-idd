@@ -56,8 +56,6 @@ Searcher {
     public Risposta searchIndex(String quer) {
         try 
         {
-            Output out = new Output();                  //variabile che contiene le due colonne ottenute da la doppia ricerca
-
             String indexPath = "lucene-index";  // directory dove è stato creato l’indice
             Directory dir = FSDirectory.open(Paths.get(indexPath));
             IndexReader reader = DirectoryReader.open(dir);
@@ -65,34 +63,31 @@ Searcher {
 
             totalDocs = reader.numDocs();
 
-            Scanner scanner = new Scanner(System.in);
-            System.out.print("Su quale campo vuoi eseguire la ricerca (titolo/contenuto)? ");
-            String field = scanner.nextLine().trim();
+            Scanner scanner = new Scanner(System.in);               //inizializzazione scanner
 
-            // Ottieni il parser per il campo scelto
-            QueryParser parser = getQueryParser(field);
-
-            // Input della query utente
+            
+            QueryParser parser = getQueryParser("titolo");         //scelgo il tipo di parser
+            
             System.out.print("Inserisci la tua query: ");
-            String q = scanner.nextLine().trim();
+            String q = scanner.nextLine().trim();               //leggo l'input dell'utente
+            Output out = new Output(q);                  //variabile che contiene le due colonne ottenute da la doppia ricerca
+            Query query = parser.parse(q);              //eseguo il parsing della query fornita dall'utente
 
-            // Parsing della query e ricerca
-            Query query = parser.parse(q);
-
+            /*inizio la ricerca e prendo il tempo iniziale*/
             System.out.println("\nEsecuzione della ricerca...");
             long startTime = System.nanoTime();
 
             TopDocs results = searcher.search(query, 10);
             ScoreDoc[] hits = results.scoreDocs;
 
+            /*verifico e stampo il tempo impiegato per la ricerca*/
             long endTime = System.nanoTime();
             double durationMs = (endTime - startTime) / 1_000_000.0;
-
             System.out.println("Trovati " + hits.length + " documenti in " + durationMs + " ms.\n");
 
             int relevantDocumentsFound = 0;
+            int contatore = 0;                                      //contatore utile a visualizzare il numero di risultati ottenuti
 
-            int contatore = 0;              //contatore utile a visualizzare il numero di risultati ottenuti
             System.out.println("====================================================");
             // Mostra risultati
             for (ScoreDoc hit : hits) {
@@ -146,6 +141,10 @@ Searcher {
         }
 
         return occorrenze;
+    }
+
+    private void eseguiParsing(Output o, QueryParser parser ){
+
     }
 }
 

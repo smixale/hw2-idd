@@ -3,14 +3,16 @@ package idd.util.Oggetti;
 import java.util.ArrayList;
 import java.util.List;
 
-import idd.util.string;
-
 public class Output {
-    string input;
+    String input;
     List <Risposta> outTitolo = new ArrayList<>();;
     List <Risposta> outContenuto = new ArrayList<>();;
     double precisionTitolo = 0;
     double precisionContenuto = 0;
+
+    public Output (String input){
+        this.input = input;
+    }
 
     public List <Risposta> getOutTitoli(){
         return outTitolo;
@@ -26,5 +28,17 @@ public class Output {
 
     public void addOutContenuto (Risposta c){
         outContenuto.add(c);
+    }
+
+    public String getInput(){
+        return this.input;
+    }
+
+    public double getPrecisionTitolo(){
+        return this.precisionTitolo;
+    }
+
+    public double getPrecisionContenuto(){
+        return this.precisionContenuto;
     }
 }
