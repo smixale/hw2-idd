@@ -21,7 +21,11 @@ import org.apache.lucene.search.TopDocs;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
 
-public class Searcher {
+import idd.util.Oggetti.Output;
+import idd.util.Oggetti.Risposta;
+
+public class
+Searcher {
 
     private long totalDocs;
 
@@ -35,11 +39,11 @@ public class Searcher {
                 .addTokenFilter(WordDelimiterGraphFilterFactory.class)
                 .build();
 
-        if (field.equals("title") || field.equals("t")) {
+        if (field.equals("titolo") || field.equals("t")) {
             // Analyzer semplice per i titoli
             return new QueryParser("content", analyzerCustom);
         }else{
-            if (field.equals("content") || field.equals("c")) {
+            if (field.equals("contenuto") || field.equals("c")) {
                 // Analyzer con stopwords per il testo completo
                 return new QueryParser("content", new StandardAnalyzer(new Stopwords().getStopWords()));
             } else {
@@ -49,8 +53,11 @@ public class Searcher {
 
     }
 
-    public void searchIndex() {
-        try {
+    public Risposta searchIndex(String quer) {
+        try 
+        {
+            Output out = new Output();                  //variabile che contiene le due colonne ottenute da la doppia ricerca
+
             String indexPath = "lucene-index";  // directory dove è stato creato l’indice
             Directory dir = FSDirectory.open(Paths.get(indexPath));
             IndexReader reader = DirectoryReader.open(dir);
@@ -59,7 +66,7 @@ public class Searcher {
             totalDocs = reader.numDocs();
 
             Scanner scanner = new Scanner(System.in);
-            System.out.print("Su quale campo vuoi eseguire la ricerca (title/content)? ");
+            System.out.print("Su quale campo vuoi eseguire la ricerca (titolo/contenuto)? ");
             String field = scanner.nextLine().trim();
 
             // Ottieni il parser per il campo scelto
@@ -121,9 +128,12 @@ public class Searcher {
 
             reader.close();
 
+            return new Risposta(null, null);
+
         } catch (Exception e) {
             e.printStackTrace();
         }
+        return null;
     }
 
     private static int contaOccorrenze(String content, String s) {

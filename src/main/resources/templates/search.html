@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Motore di Ricerca Avanzato</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <div class="container">
+        <h1>Motore di Ricerca Avanzato</h1>
+
+        <form action="#" th:action="@{/search}" method="post" class="search-form">
+            <input type="text" name="query" th:value="${query}" placeholder="Inserisci la tua ricerca..." required>
+            <button type="submit">Cerca</button>
+        </form>
+
+        <!-- Mostra eventuali errori -->
+        <div th:if="${error}" class="error">
+            <p th:text="${error}"></p>
+        </div>
+
+        <!-- Mostra i risultati -->
+        <div th:if="${risultatiTitolo} or ${risultatiContenuto}" class="results-grid">
+            
+            <div class="results-column">
+                <h2>Risultati nei Titoli</h2>
+                <div th:if="${#lists.isEmpty(risultatiTitolo)}">
+                    <p class="no-results">Nessun risultato trovato.</p>
+                </div>
+                <div th:each="res : ${risultatiTitolo}" class="card">
+                    <h3 th:text="${res.titolo}">Titolo</h3>
+                    <p th:text="${res.contenuto}">Contenuto</p>
+                </div>
+            </div>
+
+            <div class="results-column">
+                <h2>Risultati nei Contenuti</h2>
+                <div th:if="${#lists.isEmpty(risultatiContenuto)}">
+                    <p class="no-results">Nessun risultato trovato.</p>
+                </div>
+                <div th:each="res : ${risultatiContenuto}" class="card">
+                    <h3 th:text="${res.titolo}">Titolo</h3>
+                    <p th:text="${res.contenuto}">Contenuto</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
