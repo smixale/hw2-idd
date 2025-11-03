@@ -81,6 +81,11 @@ button:hover {
     font-size: 0.9rem;
 }
 
+.contenuti{
+    color: #FFFFFF;
+    font-size: 1.2rem;
+}
+
 /* ======== MESSAGGI VARI ======== */
 .no-results {
     text-align: center;

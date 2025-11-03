@@ -89,9 +89,9 @@ Searcher {
             }
 
                 if(p.equals("titolo")){
-                    o.getOutTitoli().add(new File(doc.get("title"), content));
+                    o.getOutTitoli().add(new File(doc.get("title"), content,hit.score));
                 }else{
-                    o.getOutContenuto().add(new File(doc.get("title"), content));
+                    o.getOutContenuto().add(new File(doc.get("title"), content,hit.score));
                 }
 
                 System.out.println("\nScore: " + hit.score);

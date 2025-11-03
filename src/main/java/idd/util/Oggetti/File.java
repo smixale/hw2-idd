@@ -4,11 +4,13 @@ package idd.util.Oggetti;
 public class File {
     private String titolo;
     private String contenuto;
+    private float score = 0;
 
 
-    public File (String t, String c){
+    public File (String t, String c, float s){
         this.titolo = t;
         this.contenuto = c;
+        this.score = s;
     }
 
     public String getTitolo(){
@@ -25,6 +27,14 @@ public class File {
 
     public void setContenuto(String c){
         this.contenuto = c;
+    }
+
+    public float getScore(){
+        return this.score;
+    }
+
+    public void setScore(float s){
+        this.score = s;
     }
 }
 
