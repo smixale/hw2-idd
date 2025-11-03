@@ -1,49 +1,64 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" lang="it">
+<html lang="it" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Motore di Ricerca Avanzato</title>
+    <title>Motore di Ricerca Lucene</title>
+
+    <!-- 🔗 Collegamento al file CSS esterno -->
     <link rel="stylesheet" th:href="@{/css/style.css}">
 </head>
 <body>
-    <div class="container">
-        <h1>Motore di Ricerca Avanzato</h1>
 
-        <form action="#" th:action="@{/search}" method="post" class="search-form">
-            <input type="text" name="query" th:value="${query}" placeholder="Inserisci la tua ricerca..." required>
-            <button type="submit">Cerca</button>
-        </form>
+<header>
+    <h1>Motore di Ricerca Lucene</h1>
+</header>
 
-        <!-- Mostra eventuali errori -->
-        <div th:if="${error}" class="error">
-            <p th:text="${error}"></p>
+<!-- 🔹 Form di ricerca -->
+<form action="/search" method="post">
+    <input type="text" name="query" placeholder="Inserisci la parola da cercare..." required
+           th:value="${query != null ? query : ''}">
+    <button type="submit">Cerca</button>
+</form>
+
+<!-- 🔹 Contenitore principale dei risultati -->
+<div class="results-container">
+
+    <!-- Colonna risultati TITOLI -->
+    <div class="column">
+        <h2>Risultati nel Titolo</h2>
+
+        <div th:if="${results != null and #lists.isEmpty(results.outTitoli)}" class="no-results">
+            Nessun risultato trovato nei titoli.
         </div>
 
-        <!-- Mostra i risultati -->
-        <div th:if="${risultatiTitolo} or ${risultatiContenuto}" class="results-grid">
-            
-            <div class="results-column">
-                <h2>Risultati nei Titoli</h2>
-                <div th:if="${#lists.isEmpty(risultatiTitolo)}">
-                    <p class="no-results">Nessun risultato trovato.</p>
-                </div>
-                <div th:each="res : ${risultatiTitolo}" class="card">
-                    <h3 th:text="${res.titolo}">Titolo</h3>
-                    <p th:text="${res.contenuto}">Contenuto</p>
-                </div>
-            </div>
+        <div th:if="${results != null}" th:each="file : ${results.outTitoli}" class="file-result">
+            <h3 th:text="${file.title}"></h3>
+            <p th:text="${#strings.abbreviate(file.content, 200)}"></p>
+        </div>
 
-            <div class="results-column">
-                <h2>Risultati nei Contenuti</h2>
-                <div th:if="${#lists.isEmpty(risultatiContenuto)}">
-                    <p class="no-results">Nessun risultato trovato.</p>
-                </div>
-                <div th:each="res : ${risultatiContenuto}" class="card">
-                    <h3 th:text="${res.titolo}">Titolo</h3>
-                    <p th:text="${res.contenuto}">Contenuto</p>
-                </div>
-            </div>
+        <div th:if="${results != null}">
+            <p><b>Precisione:</b> <span th:text="${results.precisionTitolo}"></span></p>
         </div>
     </div>
+
+    <!-- Colonna risultati CONTENUTO -->
+    <div class="column">
+        <h2>Risultati nel Contenuto</h2>
+
+        <div th:if="${results != null and #lists.isEmpty(results.outContenuto)}" class="no-results">
+            Nessun risultato trovato nei contenuti.
+        </div>
+
+        <div th:if="${results != null}" th:each="file : ${results.outContenuto}" class="file-result">
+            <h3 th:text="${file.title}"></h3>
+            <p th:text="${#strings.abbreviate(file.content, 200)}"></p>
+        </div>
+
+        <div th:if="${results != null}">
+            <p><b>Precisione:</b> <span th:text="${results.precisionContenuto}"></span></p>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>

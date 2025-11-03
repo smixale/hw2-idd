@@ -1,98 +1,89 @@
+/* ======== STILE GENERALE ======== */
 body {
-    font-family: "Segoe UI", Arial, sans-serif;
-    background-color: #f4f6f8;
-    color: #333;
+    font-family: Arial, sans-serif;
+    background: #f5f6fa;
     margin: 0;
     padding: 0;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 50px auto;
-    background-color: #fff;
-    border-radius: 12px;
-    padding: 40px;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
+/* ======== HEADER ======== */
+header {
+    background: #2f3640;
+    color: white;
+    padding: 20px;
     text-align: center;
-    color: #0078d7;
-    margin-bottom: 30px;
 }
 
-.search-form {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 40px;
+/* ======== FORM DI RICERCA ======== */
+form {
+    margin: 20px auto;
+    text-align: center;
 }
 
 input[type="text"] {
-    width: 60%;
-    padding: 10px 15px;
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
     border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 16px;
 }
 
 button {
-    background-color: #0078d7;
-    color: #fff;
-    border: none;
     padding: 10px 20px;
-    border-radius: 8px;
-    font-size: 16px;
+    background: #0097e6;
+    border: none;
+    color: white;
+    border-radius: 5px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #005fa3;
+    background: #00a8ff;
 }
 
-.error {
-    background-color: #ffe5e5;
-    color: #c00;
-    border: 1px solid #ffaaaa;
-    padding: 10px;
-    border-radius: 8px;
+/* ======== RISULTATI ======== */
+.results-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+    gap: 20px;
+}
+
+/* ======== COLONNE ======== */
+.column {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.column h2 {
     text-align: center;
-    margin-bottom: 20px;
+    color: #273c75;
+    border-bottom: 2px solid #0097e6;
+    padding-bottom: 10px;
 }
 
-.results-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-}
-
-.results-column h2 {
-    text-align: center;
-    color: #004f8a;
+/* ======== RISULTATI SINGOLI ======== */
+.file-result {
     margin-bottom: 15px;
+    border-bottom: 1px solid #dcdde1;
+    padding-bottom: 10px;
 }
 
-.card {
-    background-color: #f1f9ff;
-    border-left: 5px solid #0078d7;
-    padding: 15px 20px;
-    border-radius: 8px;
-    margin-bottom: 15px;
-    transition: transform 0.2s, box-shadow 0.2s;
+.file-result h3 {
+    color: #192a56;
+    margin-bottom: 5px;
 }
 
-.card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+.file-result p {
+    color: #353b48;
+    font-size: 0.9rem;
 }
 
-.card h3 {
-    margin: 0 0 8px 0;
-    color: #004f8a;
-}
-
+/* ======== MESSAGGI VARI ======== */
 .no-results {
     text-align: center;
-    color: #777;
-    font-style: italic;
+    color: #e84118;
+    font-weight: bold;
 }

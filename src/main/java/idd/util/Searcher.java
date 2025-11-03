@@ -2,6 +2,7 @@ package idd.util;
 
 import java.io.IOException;
 import java.nio.file.Paths;
+import java.util.List;
 import java.util.Scanner;
 
 import org.apache.lucene.analysis.Analyzer;
@@ -22,16 +23,14 @@ import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
 
 import idd.util.Oggetti.Output;
-import idd.util.Oggetti.Risposta;
+import idd.util.Oggetti.File;
 
 public class
 Searcher {
 
     private long totalDocs;
 
-    /** 
-     * Crea un QueryParser per il campo specificato (title o content)
-     */
+    /*crea un QueryParser per il campo specificato (title o content)*/
     private QueryParser getQueryParser(String field) throws IOException {
         Analyzer analyzerCustom = CustomAnalyzer.builder()
                 .withTokenizer(WhitespaceTokenizerFactory.class)
@@ -53,7 +52,67 @@ Searcher {
 
     }
 
-    public Risposta searchIndex(String quer) {
+    /*funzione che prende in input tutto il necessario per eseguire il parsing in base al campo p fornito sull'indice, restituisce in output una lista di oggetti risposta rappresentabile tutti i risultati ottenuti dal parsing in questione*/
+    private void eseguiParsing(String p, IndexSearcher searcher, String q, List <File> lista, double temp) throws Exception {
+        int relevantDocumentsFound = 0;
+        QueryParser parser = getQueryParser(p);                 //scelgo il tipo di parser
+
+        Query query = parser.parse(q);                          //eseguo il parsing della query fornita dall'utente
+
+        long startTime = System.nanoTime();                     //prendo il tempo iniziale
+
+        /*eseguo il parsing e raccolgo i risultati*/
+        TopDocs results = searcher.search(query, 10);
+        ScoreDoc[] hits = results.scoreDocs;
+
+        long endTime = System.nanoTime();                   //prendo il tempo finale
+        temp = (endTime - startTime) / 1_000_000.0;         //salvo nell'output il tempo impiegato per il parsing
+
+
+
+        System.out.println("====================================================");
+
+        /*itero per ogni risultato ottenuto dal parsing*/
+        for (ScoreDoc hit : hits) {
+
+            Document doc = searcher.doc(hit.doc);
+
+            System.out.println("Titolo file: " + doc.get("title"));
+
+            String content = doc.get("content");
+            if (content != null) {
+                /*mostra solo un estratto*/
+                System.out.println("Contenuto: " + content.substring(0, Math.min(300, content.length())) + "....");
+
+                /*considero rilevanti tutti e soli i file che hanno nel proprio contenuto 3 o più occorrenze della query cercata*/
+                if (this.contaOccorrenze(content, q) >= 3) {
+                    relevantDocumentsFound++;
+                }
+            }else{
+                content = "Nessun contenuto trovato";
+            }
+
+                lista.add(new File(doc.get("title"), content));
+
+                System.out.println("\nScore: " + hit.score);
+                System.out.println("====================================================");
+            }
+
+        //calcolo precision/recall
+        double precision = (hits.length == 0) ? 0 : (double) relevantDocumentsFound / hits.length;
+
+
+        System.out.println("\nStatistiche:");
+
+        System.out.println("documenti rilevanti trovati: " + relevantDocumentsFound);
+        System.out.println("Precision: " + precision);
+        System.out.println("Recall: (non calcolabile senza conoscere a priori il numero di documenti rilevanti esistenti nella pool)");
+    }
+
+
+    public Output searchIndex(String q) {
+            Output out = new Output(q);                  //variabile che contiene le due colonne ottenute da la doppia ricerca
+            
         try 
         {
             String indexPath = "lucene-index";  // directory dove è stato creato l’indice
@@ -62,73 +121,20 @@ Searcher {
             IndexSearcher searcher = new IndexSearcher(reader);
 
             totalDocs = reader.numDocs();
-
-            Scanner scanner = new Scanner(System.in);               //inizializzazione scanner
-
             
-            QueryParser parser = getQueryParser("titolo");         //scelgo il tipo di parser
-            
-            System.out.print("Inserisci la tua query: ");
-            String q = scanner.nextLine().trim();               //leggo l'input dell'utente
-            Output out = new Output(q);                  //variabile che contiene le due colonne ottenute da la doppia ricerca
-            Query query = parser.parse(q);              //eseguo il parsing della query fornita dall'utente
+            /*eseguoi il parsing dei file in base al titolo e salvo il risultato nel mio output*/
+            this.eseguiParsing("titolo", searcher, q, out.getOutTitoli(),  out.getPrecisionTitolo());
 
-            /*inizio la ricerca e prendo il tempo iniziale*/
-            System.out.println("\nEsecuzione della ricerca...");
-            long startTime = System.nanoTime();
+            /*eseguoi il parsing dei file in base al contenuto e salvo il risultato nel mio output*/
+            this.eseguiParsing("contenuto", searcher, q, out.getOutContenuto(), out.getPrecisionContenuto());
 
-            TopDocs results = searcher.search(query, 10);
-            ScoreDoc[] hits = results.scoreDocs;
-
-            /*verifico e stampo il tempo impiegato per la ricerca*/
-            long endTime = System.nanoTime();
-            double durationMs = (endTime - startTime) / 1_000_000.0;
-            System.out.println("Trovati " + hits.length + " documenti in " + durationMs + " ms.\n");
-
-            int relevantDocumentsFound = 0;
-            int contatore = 0;                                      //contatore utile a visualizzare il numero di risultati ottenuti
-
-            System.out.println("====================================================");
-            // Mostra risultati
-            for (ScoreDoc hit : hits) {
-                contatore++;
-                System.out.println("Risulttato: " + contatore);
-                Document doc = searcher.doc(hit.doc);
-
-                System.out.println("Titolo file: " + doc.get("title"));
-
-                String content = doc.get("content");
-                if (content != null) {
-                    /*mostra solo un estratto*/
-                    System.out.println("Contenuto: " + content.substring(0, Math.min(300, content.length())) + "....");
-                    /*considero rilevanti tutti e soli i file che hanno nel proprio contenuto 3 o più occorrenze della query cercata*/
-                    if (this.contaOccorrenze(content, q) >= 3) {
-                        relevantDocumentsFound++;
-                    }
-                }
-
-                System.out.println("\nScore: " + hit.score);
-                System.out.println("====================================================");
-            }
-
-            //calcolo precision/recall
-            double precision = (hits.length == 0) ? 0 : (double) relevantDocumentsFound / hits.length;
-
-
-            System.out.println("\nStatistiche:");
-
-            System.out.println("documenti rilevanti trovati: " + relevantDocumentsFound);
-            System.out.println("Precision: " + precision);
-            System.out.println("Recall: (non calcolabile senza conoscere a priori il numero di documenti rilevanti esistenti nella pool)");
-
-            reader.close();
-
-            return new Risposta(null, null);
+            out.setValido(true);         //contrassegno l'output come valido
+            return out;
 
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return null;
+        return out;
     }
 
     private static int contaOccorrenze(String content, String s) {
@@ -141,10 +147,6 @@ Searcher {
         }
 
         return occorrenze;
-    }
-
-    private void eseguiParsing(Output o, QueryParser parser ){
-
     }
 }
 
