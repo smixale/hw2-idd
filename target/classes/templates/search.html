@@ -3,8 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Motore di Ricerca Lucene</title>
-
-    <!-- 🔗 Collegamento al file CSS esterno -->
     <link rel="stylesheet" th:href="@{/css/style.css}">
 </head>
 <body>
@@ -13,50 +11,50 @@
     <h1>Motore di Ricerca Lucene</h1>
 </header>
 
-<!-- 🔹 Form di ricerca -->
+<!-- Form di ricerca -->
 <form action="/search" method="post">
     <input type="text" name="query" placeholder="Inserisci la parola da cercare..." required
            th:value="${query != null ? query : ''}">
     <button type="submit">Cerca</button>
 </form>
 
-<!-- 🔹 Contenitore principale dei risultati -->
-<div class="results-container">
+<!-- Contenitore principale dei risultati -->
+<div class="results-container" th:if="${results != null}">
 
     <!-- Colonna risultati TITOLI -->
     <div class="column">
         <h2>Risultati nel Titolo</h2>
 
-        <div th:if="${results != null and #lists.isEmpty(results.outTitoli)}" class="no-results">
+        <div th:if="${#lists.isEmpty(results.outTitoli)}" class="no-results">
             Nessun risultato trovato nei titoli.
         </div>
 
-        <div th:if="${results != null}" th:each="file : ${results.outTitoli}" class="file-result">
-            <h3 th:text="${file.title}"></h3>
-            <p th:text="${#strings.abbreviate(file.content, 200)}"></p>
+        <div th:each="file : ${results.outTitoli}" class="file-result">
+            <h3 th:text="${file.titolo}"></h3>
+            <p th:text="${#strings.abbreviate(file.contenuto, 200)}"></p>
         </div>
 
-        <div th:if="${results != null}">
-            <p><b>Precisione:</b> <span th:text="${results.precisionTitolo}"></span></p>
-        </div>
+        <p><b>Precision:</b> <span th:text="${results.precisionTitolo}"></span></p>
+        <p><b>recall: </b>(non calcolabile senza conoscere a priori il numero di documenti rilevanti esistenti nella pool)</p>
+        <p><b>Risultato ottenuto in:</b> <span th:text="${results.tempoTitolo}"></span>ms</p>
     </div>
 
     <!-- Colonna risultati CONTENUTO -->
     <div class="column">
         <h2>Risultati nel Contenuto</h2>
 
-        <div th:if="${results != null and #lists.isEmpty(results.outContenuto)}" class="no-results">
+        <div th:if="${#lists.isEmpty(results.outContenuto)}" class="no-results">
             Nessun risultato trovato nei contenuti.
         </div>
 
-        <div th:if="${results != null}" th:each="file : ${results.outContenuto}" class="file-result">
-            <h3 th:text="${file.title}"></h3>
-            <p th:text="${#strings.abbreviate(file.content, 200)}"></p>
+        <div th:each="file : ${results.outContenuto}" class="file-result">
+            <h3 th:text="${file.titolo}"></h3>
+            <p th:text="${#strings.abbreviate(file.contenuto, 200)}"></p>
         </div>
 
-        <div th:if="${results != null}">
-            <p><b>Precisione:</b> <span th:text="${results.precisionContenuto}"></span></p>
-        </div>
+        <p><b>Precision:</b> <span th:text="${results.precisionContenuto}"></span></p>
+        <p><b>recall: </b>(non calcolabile senza conoscere a priori il numero di documenti rilevanti esistenti nella pool)</p>
+        <p><b>Risultato ottenuto in:</b> <span th:text="${results.tempoContenuto}"></span>ms</p>
     </div>
 </div>
 

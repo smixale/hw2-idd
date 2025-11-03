@@ -44,8 +44,36 @@ public class Output {
         return this.precisionTitolo;
     }
 
+    public void setPrecisionTitolo(double p){
+        this.precisionTitolo = p;
+    }
+
     public double getPrecisionContenuto(){
         return this.precisionContenuto;
+    }
+
+    public void setPrecisionContenuto(double p){
+        this.precisionContenuto = p;
+    }
+
+    public double getTempoTitolo(){
+        return this.tempoTitolo;
+    }
+
+    public void setTempoTitolo(double t){
+        this.tempoTitolo = t;
+    }
+
+    public double getTempoContenuto(){
+        return this.tempoContenuto;
+    }
+
+    public void setTempoContenuto(double t){
+        this.tempoContenuto = t;
+    }
+
+    public boolean getValido(){
+        return this.valido;
     }
 
     public void setValido(Boolean b){

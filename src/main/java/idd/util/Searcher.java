@@ -2,8 +2,6 @@ package idd.util;
 
 import java.io.IOException;
 import java.nio.file.Paths;
-import java.util.List;
-import java.util.Scanner;
 
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.core.LowerCaseFilterFactory;
@@ -22,8 +20,8 @@ import org.apache.lucene.search.TopDocs;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
 
-import idd.util.Oggetti.Output;
 import idd.util.Oggetti.File;
+import idd.util.Oggetti.Output;
 
 public class
 Searcher {
@@ -53,7 +51,7 @@ Searcher {
     }
 
     /*funzione che prende in input tutto il necessario per eseguire il parsing in base al campo p fornito sull'indice, restituisce in output una lista di oggetti risposta rappresentabile tutti i risultati ottenuti dal parsing in questione*/
-    private void eseguiParsing(String p, IndexSearcher searcher, String q, List <File> lista, double temp) throws Exception {
+    private void eseguiParsing(String p, IndexSearcher searcher, String q, Output o) throws Exception {
         int relevantDocumentsFound = 0;
         QueryParser parser = getQueryParser(p);                 //scelgo il tipo di parser
 
@@ -66,9 +64,7 @@ Searcher {
         ScoreDoc[] hits = results.scoreDocs;
 
         long endTime = System.nanoTime();                   //prendo il tempo finale
-        temp = (endTime - startTime) / 1_000_000.0;         //salvo nell'output il tempo impiegato per il parsing
-
-
+        double end = (endTime - startTime) / 1_000_000.0;
 
         System.out.println("====================================================");
 
@@ -92,7 +88,11 @@ Searcher {
                 content = "Nessun contenuto trovato";
             }
 
-                lista.add(new File(doc.get("title"), content));
+                if(p.equals("titolo")){
+                    o.getOutTitoli().add(new File(doc.get("title"), content));
+                }else{
+                    o.getOutContenuto().add(new File(doc.get("title"), content));
+                }
 
                 System.out.println("\nScore: " + hit.score);
                 System.out.println("====================================================");
@@ -101,6 +101,13 @@ Searcher {
         //calcolo precision/recall
         double precision = (hits.length == 0) ? 0 : (double) relevantDocumentsFound / hits.length;
 
+        if(p.equals("titolo")){
+            o.setTempoTitolo(end);
+            o.setPrecisionTitolo(precision);
+        }else{
+            o.setTempoContenuto(end);
+            o.setPrecisionContenuto(precision);
+        }
 
         System.out.println("\nStatistiche:");
 
@@ -123,10 +130,10 @@ Searcher {
             totalDocs = reader.numDocs();
             
             /*eseguoi il parsing dei file in base al titolo e salvo il risultato nel mio output*/
-            this.eseguiParsing("titolo", searcher, q, out.getOutTitoli(),  out.getPrecisionTitolo());
+            this.eseguiParsing("titolo", searcher, q, out);
 
             /*eseguoi il parsing dei file in base al contenuto e salvo il risultato nel mio output*/
-            this.eseguiParsing("contenuto", searcher, q, out.getOutContenuto(), out.getPrecisionContenuto());
+            this.eseguiParsing("contenuto", searcher, q, out);
 
             out.setValido(true);         //contrassegno l'output come valido
             return out;
