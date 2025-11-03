@@ -14,26 +14,36 @@ public class Output {
     double tempoContenuto = 0;                                  //tempo impiegato per il parsing sul contenuto
     double precisionTitolo = 0;                                 //precisione ottenuta dal parsing sul titolo
     double precisionContenuto = 0;                              //precisione ottenuta dal parsing sul contenuto
+    int fileRilevantiTitolo = 0;
+    int fileRilevantiContenuto = 0;
     Boolean valido = false;                                     //variabile che indica se l'output è valido (se la ricerca è andata a buon fine)
 
     public Output (String input){
         this.input = input;
     }
 
-    public List <File> getOutTitoli(){
-        return outTitolo;
+    public List <File> getOutTitolo(){
+        return this.outTitolo;
     }
 
-    public void addOutTitoli (File t){
-        outTitolo.add(t);
+    public void setOutTitolo(List<File> l){
+        this.outTitolo = l;
+    }
+
+    public void addOutTitolo (File t){
+        this.outTitolo.add(t);
     }
 
     public List <File> getOutContenuto(){
-        return outContenuto;
+        return this.outContenuto;
+    }
+
+    public void setOutContenuto(List<File> l){
+        this.outContenuto = l;
     }
 
     public void addOutContenuto (File c){
-        outContenuto.add(c);
+        this.outContenuto.add(c);
     }
 
     public String getInput(){
@@ -70,6 +80,22 @@ public class Output {
 
     public void setTempoContenuto(double t){
         this.tempoContenuto = t;
+    }
+
+    public int getFileRilevantiTitolo (){
+        return this.fileRilevantiTitolo;
+    }
+
+    public void setFileRilevantiTitolo (int f){
+        this.fileRilevantiTitolo = f;
+    }
+
+    public int getFileRilevantiContenuto (){
+        return this.fileRilevantiContenuto;
+    }
+
+    public void setFileRilevantiContenuto (int f){
+        this.fileRilevantiContenuto = f;
     }
 
     public boolean getValido(){

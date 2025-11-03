@@ -38,7 +38,7 @@ Searcher {
 
         if (field.equals("titolo") || field.equals("t")) {
             // Analyzer semplice per i titoli
-            return new QueryParser("content", analyzerCustom);
+            return new QueryParser("title", analyzerCustom);
         }else{
             if (field.equals("contenuto") || field.equals("c")) {
                 // Analyzer con stopwords per il testo completo
@@ -49,6 +49,27 @@ Searcher {
         }
 
     }
+
+private int contaOccorrenze(String content, String s) {
+    if (content == null || s == null || s.isEmpty()) {
+        return 0;
+    }
+
+    //rendo tutto minuscolo
+    content = content.toLowerCase();
+    s = s.toLowerCase();
+
+    int occorrenze = 0;
+    int i = 0;
+
+    while ((i = content.indexOf(s, i)) != -1) {
+        occorrenze++;
+        i += s.length(); // continua dopo l’occorrenza trovata
+    }
+
+    return occorrenze;
+}
+
 
     /*funzione che prende in input tutto il necessario per eseguire il parsing in base al campo p fornito sull'indice, restituisce in output una lista di oggetti risposta rappresentabile tutti i risultati ottenuti dal parsing in questione*/
     private void eseguiParsing(String p, IndexSearcher searcher, String q, Output o) throws Exception {
@@ -88,25 +109,29 @@ Searcher {
                 content = "Nessun contenuto trovato";
             }
 
-                if(p.equals("titolo")){
-                    o.getOutTitoli().add(new File(doc.get("title"), content,hit.score));
+                /*aggiungo alla colonna del titolo o dei contenuti*/
+                if(p.equals("t")){
+                    o.addOutTitolo(new File(doc.get("title"), content,hit.score));;
                 }else{
-                    o.getOutContenuto().add(new File(doc.get("title"), content,hit.score));
+                    o.addOutContenuto(new File(doc.get("title"), content,hit.score));;
                 }
 
                 System.out.println("\nScore: " + hit.score);
                 System.out.println("====================================================");
             }
 
-        //calcolo precision/recall
-        double precision = (hits.length == 0) ? 0 : (double) relevantDocumentsFound / hits.length;
+            //calcolo precision/recall
+            double precision = (hits.length == 0) ? 0 : (double) relevantDocumentsFound / hits.length;
 
-        if(p.equals("titolo")){
-            o.setTempoTitolo(end);
-            o.setPrecisionTitolo(precision);
-        }else{
-            o.setTempoContenuto(end);
-            o.setPrecisionContenuto(precision);
+            /*aggiungo alla colonna del titolo o dei contenuti*/
+            if(p.equals("t")){
+                o.setTempoTitolo(end);
+                o.setPrecisionTitolo(precision);
+                o.setFileRilevantiTitolo(relevantDocumentsFound);
+            }else{
+                o.setTempoContenuto(end);
+                o.setPrecisionContenuto(precision);
+                o.setFileRilevantiContenuto(relevantDocumentsFound);
         }
 
         System.out.println("\nStatistiche:");
@@ -130,10 +155,10 @@ Searcher {
             totalDocs = reader.numDocs();
             
             /*eseguoi il parsing dei file in base al titolo e salvo il risultato nel mio output*/
-            this.eseguiParsing("titolo", searcher, q, out);
+            this.eseguiParsing("t", searcher, q, out);
 
             /*eseguoi il parsing dei file in base al contenuto e salvo il risultato nel mio output*/
-            this.eseguiParsing("contenuto", searcher, q, out);
+            this.eseguiParsing("c", searcher, q, out);
 
             out.setValido(true);         //contrassegno l'output come valido
             return out;
@@ -142,18 +167,6 @@ Searcher {
             e.printStackTrace();
         }
         return out;
-    }
-
-    private static int contaOccorrenze(String content, String s) {
-        int occorrenze = 0;
-        int i = 0;
-
-        while ((i = content.indexOf(s, i)) != -1) {
-            occorrenze++;
-            i += s.length();
-        }
-
-        return occorrenze;
     }
 }
 

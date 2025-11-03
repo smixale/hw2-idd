@@ -33,16 +33,17 @@
         <div class="column">
             <h2>Risultati della ricerca nei titoli di "<span th:text="${results.input}"></span>"</h2>
 
-            <div th:if="${#lists.isEmpty(results.outTitoli)}" class="no-results">
+            <div th:if="${#lists.isEmpty(results.outTitolo)}" class="no-results">
                 Nessun risultato trovato nei titoli.
             </div>
 
-            <div th:each="file : ${results.outTitoli}" class="file-result">
+            <div th:each="file : ${results.outTitolo}" class="file-result">
                 <h3 th:text="${file.titolo}"></h3>
                 <p class="contenuti" th:text="${#strings.abbreviate(file.contenuto, 200)}"></p>
                 <p>score: <span th:text="${file.score}"></span></p>
             </div>
 
+            <p><b>File rilevanti trovati:</b> <span th:text="${results.getFileRilevantiTitolo}"></span></p>
             <p><b>Precision:</b> <span th:text="${results.precisionTitolo}"></span></p>
             <p><b>recall: </b>(non calcolabile senza conoscere a priori il numero di documenti rilevanti esistenti nella pool)</p>
             <p><b>Risultato ottenuto in:</b> <span th:text="${results.tempoTitolo}"></span>ms</p>
@@ -62,6 +63,7 @@
                 <p>score: <span th:text="${file.score}"></span></p>
             </div>
 
+            <p><b>File rilevanti trovati:</b> <span th:text="${results.getFileRilevantiContenuto}"></span></p>
             <p><b>Precision:</b> <span th:text="${results.precisionContenuto}"></span></p>
             <p><b>recall: </b>(non calcolabile senza conoscere a priori il numero di documenti rilevanti esistenti nella pool)</p>
             <p><b>Risultato ottenuto in:</b> <span th:text="${results.tempoContenuto}"></span>ms</p>
