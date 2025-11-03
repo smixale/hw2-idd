@@ -1,4 +1,4 @@
-cfs entry for: _1x.fld
+cfs entry for: _1y.fld
 doc 0
   field 0
     name title
@@ -1000,7 +1000,7 @@ doc 99
 
 END
 checksum 00000000000943523339
-cfs entry for: _1x.inf
+cfs entry for: _1y.inf
 number of fields 2
   name title
   number 0
@@ -1029,7 +1029,7 @@ number of fields 2
   dimensional num bytes 0
   soft-deletes false
 checksum 00000000001675594787
-cfs entry for: _1x.len
+cfs entry for: _1y.len
 field title
   type NUMERIC
   minvalue 2
@@ -1440,7 +1440,7 @@ T
 T
 END
 checksum 00000000002455019550
-cfs entry for: _1x.pst
+cfs entry for: _1y.pst
 field content
   term 1
     doc 0
@@ -3487,16 +3487,16 @@ field title
 END
 checksum 00000000002766426675
 table of contents, size: 4
-  filename: _1x.fld
+  filename: _1y.fld
     start: 23
     end: 14778
-  filename: _1x.inf
+  filename: _1y.inf
     start: 14801
     end: 15402
-  filename: _1x.len
+  filename: _1y.len
     start: 15425
     end: 16365
-  filename: _1x.pst
+  filename: _1y.pst
     start: 16388
     end: 42743
 table of contents begins at offset: 0000000000000042743

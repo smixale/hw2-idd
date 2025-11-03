@@ -1,10 +1,7 @@
-package idd;
+package idd.util;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
-
-import idd.util.Indexer;
-import idd.util.Stats;
 
 @Component
 public class StartupIndexer implements CommandLineRunner {
