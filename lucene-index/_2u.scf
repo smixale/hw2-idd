@@ -1,4 +1,4 @@
-cfs entry for: _2p.fld
+cfs entry for: _2u.fld
 doc 0
   field 0
     name title
@@ -1001,7 +1001,7 @@ doc 99
 
 END
 checksum 00000000002836011488
-cfs entry for: _2p.inf
+cfs entry for: _2u.inf
 number of fields 2
   name title
   number 0
@@ -1030,7 +1030,7 @@ number of fields 2
   dimensional num bytes 0
   soft-deletes false
 checksum 00000000001675594787
-cfs entry for: _2p.len
+cfs entry for: _2u.len
 field title
   type NUMERIC
   minvalue 2
@@ -1441,7 +1441,7 @@ T
 T
 END
 checksum 00000000000062568059
-cfs entry for: _2p.pst
+cfs entry for: _2u.pst
 field content
   term 1
     doc 15
@@ -3454,16 +3454,16 @@ field title
 END
 checksum 00000000000506632646
 table of contents, size: 4
-  filename: _2p.fld
+  filename: _2u.fld
     start: 23
     end: 14803
-  filename: _2p.inf
+  filename: _2u.inf
     start: 14826
     end: 15427
-  filename: _2p.len
+  filename: _2u.len
     start: 15450
     end: 16390
-  filename: _2p.pst
+  filename: _2u.pst
     start: 16413
     end: 43023
 table of contents begins at offset: 0000000000000043023
