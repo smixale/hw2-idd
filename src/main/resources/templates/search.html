@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="it" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Motore di Ricerca Lucene</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+
+<header>
+    <h1>Ingegneria dei dati HW2</h1>
+</header>
+
+
+<!-- Form di ricerca -->
+<form action="/search" method="post">
+    <input type="text" name="query" placeholder="Inserisci la parola da cercare..." required
+           th:value="${query != null ? query : ''}">
+    <button type="submit">Cerca</button>
+</form>
+
+<!-- Contenitore principale dei risultati -->
+<div class="results-container" th:if="${results != null}">
+
+    <!--mostra solo se la ricerca non va a buon fine-->
+    <div th:if="${!results.valido}">
+        <h2 class="no-results">Ricerca fallita</h2>
+    </div>
+
+    <!--mostra solo se la ricerca va a buon fine-->
+    <div class="results-container" th:if="${results.valido}">
+        <!-- Colonna risultati TITOLI -->
+        <div class="column">
+            <h2>Risultati della ricerca nei titoli di "<span th:text="${results.input}"></span>"</h2>
+
+            <div th:if="${#lists.isEmpty(results.outTitoli)}" class="no-results">
+                Nessun risultato trovato nei titoli.
+            </div>
+
+            <div th:each="file : ${results.outTitoli}" class="file-result">
+                <h3 th:text="${file.titolo}"></h3>
+                <p class="contenuti" th:text="${#strings.abbreviate(file.contenuto, 200)}"></p>
+                <p>score: <span th:text="${file.score}"></span></p>
+            </div>
+
+            <p><b>Precision:</b> <span th:text="${results.precisionTitolo}"></span></p>
+            <p><b>recall: </b>(non calcolabile senza conoscere a priori il numero di documenti rilevanti esistenti nella pool)</p>
+            <p><b>Risultato ottenuto in:</b> <span th:text="${results.tempoTitolo}"></span>ms</p>
+        </div>
+
+        <!-- Colonna risultati CONTENUTO -->
+        <div class="column">
+            <h2>Risultati della riceca nei contenuti di "<span th:text="${results.input}"></span>"</h2>
+
+            <div th:if="${#lists.isEmpty(results.outContenuto)}" class="no-results">
+                Nessun risultato trovato nei contenuti.
+            </div>
+
+            <div th:each="file : ${results.outContenuto}" class="file-result">
+                <h3 th:text="${file.titolo}"></h3>
+                <p class="contenuti" th:text="${#strings.abbreviate(file.contenuto, 200)}"></p>
+                <p>score: <span th:text="${file.score}"></span></p>
+            </div>
+
+            <p><b>Precision:</b> <span th:text="${results.precisionContenuto}"></span></p>
+            <p><b>recall: </b>(non calcolabile senza conoscere a priori il numero di documenti rilevanti esistenti nella pool)</p>
+            <p><b>Risultato ottenuto in:</b> <span th:text="${results.tempoContenuto}"></span>ms</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

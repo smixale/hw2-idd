@@ -1,0 +1,94 @@
+/* ======== STILE GENERALE ======== */
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f6fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* ======== HEADER ======== */
+header {
+    background: #2f3640;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* ======== FORM DI RICERCA ======== */
+form {
+    margin: 20px auto;
+    text-align: center;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    background: #0097e6;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #00a8ff;
+}
+
+/* ======== RISULTATI ======== */
+.results-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+    gap: 20px;
+}
+
+/* ======== COLONNE ======== */
+.column {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.column h2 {
+    text-align: center;
+    color: #273c75;
+    border-bottom: 2px solid #0097e6;
+    padding-bottom: 10px;
+}
+
+/* ======== RISULTATI SINGOLI ======== */
+.file-result {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #dcdde1;
+    padding-bottom: 10px;
+}
+
+.file-result h3 {
+    color: #192a56;
+    margin-bottom: 5px;
+}
+
+.file-result p {
+    color: #353b48;
+    font-size: 0.9rem;
+}
+
+.contenuti{
+    color: #FFFFFF;
+    font-size: 1.2rem;
+}
+
+/* ======== MESSAGGI VARI ======== */
+.no-results {
+    text-align: center;
+    color: #e84118;
+    font-weight: bold;
+}
